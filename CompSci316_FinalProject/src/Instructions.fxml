@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InstructionsController">
+   <children>
+      <Label text="Instructions">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="48.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="instructionsTextArea" editable="false" prefHeight="200.0" prefWidth="300.0" text="Players must choose a grid size (3X3, 4X4, or 5X5). Both players must choose a different character/symbol. If players choose the same symbol, or if symbols are not selected, the characters will be assigned the default symbols (X and O). The first player to 3, 4, or 5 (depending on grid size) in a row, wins. There are other ways to win too. Stamp (4X4 and 5X5 grid): a player wins when he or she gets four of their own symbols in any corner forming a 4X4 square, like a “Stamp”. Corners (5X5 grid): a player wins when he or she takes up all four corners of the grid. If there are no more moves to make, select any of the playable buttons to continue. the prompter will state that the game is a “Draw”. If a draw occurs, simply click the “Reset” button to reset the playable buttons. Play fair and have fun!" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="instructionsBackButton" mnemonicParsing="false" onAction="#InstructionsBackButtonPressed" text="Back">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>
